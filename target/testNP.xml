@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NPSuite" parallel="true">
+    <test name="deliveryCost">
+        <classes>
+            <class name="IntroToAuto.deliveryCost"/>
+        </classes>
+    </test>
+    <test name="findOffice">
+        <classes>
+            <class name="IntroToAuto.findOffice">
+                <methods>
+                    <exclude name="toExclude" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="groupDemo">
+        <groups>
+            <run>
+                <include name="groupDemo"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="IntroToAuto.vacancy"/>
+        </classes>
+    </test>
+</suite>
